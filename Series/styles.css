@@ -1,0 +1,169 @@
+/* Resetando estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+#container {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#changeStatusBtn {
+    background-color: #17a2b8;
+    margin-left: 10px;
+}
+
+#changeStatusBtn:hover {
+    background-color: #138496;
+}
+
+.lists {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.category {
+    width: 30%;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    min-height: 200px;
+    border: 2px dashed #ccc;
+    transition: background-color 0.3s ease;
+}
+
+.category:hover {
+    background-color: #f8f9fa;
+}
+
+.series {
+    background-color: #f8f8f8;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    transition: transform 0.2s ease;
+}
+
+.series:hover {
+    transform: scale(1.02);
+}
+
+input[type="number"] {
+    padding: 5px;
+    margin-top: 5px;
+    width: 50px;
+}
+
+button.saveProgress, button.remove, button.edit {
+    margin-top: 10px;
+}
+
+button.saveProgress {
+    background-color: #28a745;
+}
+
+button.saveProgress:hover {
+    background-color: #218838;
+}
+
+button.remove {
+    background-color: #dc3545;
+}
+
+button.remove:hover {
+    background-color: #c82333;
+}
+
+button.edit {
+    background-color: #ffc107;
+}
+
+button.edit:hover {
+    background-color: #e0a800;
+}
+
+button.saveProgress,
+button.remove,
+button.edit {
+    font-size: 14px;
+    width: 100%;
+}
+
+select {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Estilos para a seção de recomendações */
+.recommendations {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.recommendations h3 {
+    margin-bottom: 10px;
+}
+
+.recommendations ul {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding padrão */
+}
+
+.recommendations li {
+    margin: 5px 0; /* Espaçamento entre os itens da lista */
+}
+.hidden {
+    display: none;
+}
+
+.logout-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}

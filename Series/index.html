@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Series Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="auth/auth.css">
+</head>
+<body>
+    <!-- Seção de Autenticação (Login e Cadastro) -->
+    <div id="auth-section">
+        <div id="login-form">
+            <h2>Login</h2>
+            <input type="text" id="loginUsername" placeholder="Username">
+            <input type="password" id="loginPassword" placeholder="Senha">
+            <button id="loginBtn">Entrar</button>
+            <p>Não tem uma conta? <a href="#" id="showRegister">Cadastre-se</a></p>
+        </div>
+        <div id="register-form" class="hidden">
+            <h2>Cadastro</h2>
+            <input type="text" id="registerUsername" placeholder="Username">
+            <input type="password" id="registerPassword" placeholder="Senha">
+            <input type="password" id="registerConfirmPassword" placeholder="Confirme a Senha">
+            <button id="registerBtn">Cadastrar</button>
+            <p>Já tem uma conta? <a href="#" id="showLogin">Entrar</a></p>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal (Visível após o Login) -->
+    <div id="container" class="hidden">
+        <header>
+            <h1>Series Tracker</h1>
+            <button id="addSeriesBtn">Adicionar Série</button>
+            <button id="changeStatusBtn">Mudar Status</button>
+            <button id="logoutBtn" class="logout-button">Logout</button>
+        </header>
+
+        <main>
+            <div class="dashboard">
+                <label for="categoryFilter">Filtrar por Categoria:</label>
+                <select id="categoryFilter">
+                    <option value="all">Todas as Séries</option>
+                    <option value="Para Assistir">Para Assistir</option>
+                    <option value="Assistindo">Assistindo</option>
+                    <option value="Assistidas">Assistidas</option>
+                </select>
+                
+                <!-- Nova seção para pesquisa de séries -->
+                <div>
+                    <input type="text" id="searchSeriesInput" placeholder="Ex: drama">
+                    <button id="searchSeriesBtn">Buscar</button>
+                </div>
+                
+                <!-- Filtros Avançados -->
+                <div>
+                    
+                
+                    </select>
+                   
+                    
+                    
+                    
+                </div>
+                
+                <div id="lists" class="lists"></div>
+                
+                <!-- Nova seção para exibir recomendações -->
+                <div id="recommendations" class="recommendations"></div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="auth/auth.js"></script>
+    <script src="security/security.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
